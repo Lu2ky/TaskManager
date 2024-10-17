@@ -1,4 +1,10 @@
 # TaskManager
+
 ## Alpha Version
-### Collaborators
+
+### Update Log
+- login and account creation
+- Storing data in "D:\TaskManagerData"
+  
+## Collaborators
 -Luky
