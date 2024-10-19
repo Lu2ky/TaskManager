@@ -1,6 +1,7 @@
 package co.Luky;
 
 public class Sesion {
+	
 	private static Usuario usuario;
 
 	public static Usuario getUsuario() {

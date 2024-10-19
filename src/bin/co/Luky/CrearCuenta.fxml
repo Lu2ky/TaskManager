@@ -39,18 +39,24 @@
                   <Font size="23.0" />
                </font>
             </Text>
-            <TextField fx:id="userField1" layoutX="203.0" layoutY="106.0" prefHeight="26.0" prefWidth="301.0" promptText="User" style="-fx-background-color: white;" />
-            <TextField fx:id="PasswordField1" layoutX="204.0" layoutY="137.0" prefHeight="26.0" prefWidth="299.0" promptText="Password" style="-fx-background-color: white;" />
+            <TextField fx:id="PasswordField1" layoutX="204.0" layoutY="137.0" prefHeight="26.0" prefWidth="299.0" promptText="Password" style="-fx-background-color: white;" styleClass="-fx-cursor: text;" />
+            <TextField fx:id="userField1" layoutX="203.0" layoutY="106.0" prefHeight="26.0" prefWidth="301.0" promptText="User" style="-fx-background-color: white;" styleClass="-fx-cursor: text;" />
             <Circle fill="WHITE" layoutX="154.0" layoutY="127.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
             <Circle fill="WHITE" layoutX="118.0" layoutY="166.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
             <Line endX="-77.0" endY="-27.666671752929688" layoutX="220.0" layoutY="166.0" startX="-91.0" startY="-11.666671752929688" />
             <Line endX="-32.33332824707031" endY="15.666664123535156" layoutX="196.0" layoutY="100.0" startX="-15.0" startY="-2.3333358764648438" />
             <Line endX="20.0" endY="-48.0" layoutX="87.0" layoutY="225.0" startX="2.0" startY="-30.0" />
-            <Button fx:id="CreateAccount1" layoutX="204.0" layoutY="208.0" mnemonicParsing="false" text="Create Account" />
+            <Button fx:id="CreateAccount1" layoutX="204.0" layoutY="208.0" mnemonicParsing="false" styleClass="-fx-cursor: hand;" text="Create Account" />
             <AnchorPane layoutX="248.0" layoutY="236.0" />
-            <Button fx:id="LoginButton1" layoutX="448.0" layoutY="209.0" mnemonicParsing="false" text="Log in" />
             <Text fx:id="feedbackText1" layoutX="204.0" layoutY="250.0" fill="RED" />
-            <TextField fx:id="rePasswordField" layoutX="203.0" layoutY="171.0" prefHeight="26.0" prefWidth="299.0" promptText="Repeat Password" style="-fx-background-color: white;" />
+            <Button fx:id="LoginButton1" layoutX="448.0" layoutY="209.0" mnemonicParsing="false" styleClass="-fx-cursor: hand;" text="Log in" />
+            <TextField fx:id="rePasswordField" layoutX="203.0" layoutY="171.0" prefHeight="26.0" prefWidth="299.0" promptText="Repeat Password" style="-fx-background-color: white;" styleClass="-fx-cursor: text;" />
+            <Text fx:id="Close" layoutX="594.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="-fx-cursor: hand;" text="X" wrappingWidth="32.0">
+            
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
       <StackPane />

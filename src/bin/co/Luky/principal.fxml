@@ -32,10 +32,15 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -43,22 +48,68 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: GRAY;" VBox.vgrow="ALWAYS">
       <children>
-            <ImageView fitHeight="206.0" fitWidth="193.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/Images/image1.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="497.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/Images/image2.jpg" />
-
-               </image>
-            </ImageView>
-            <Text fx:id="Welcome" layoutX="284.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+            <Text id="Welcome" fx:id="Welcome" layoutX="280.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
+            <ImageView fitHeight="190.0" fitWidth="200.0" layoutX="14.0" layoutY="97.0">
+               <image>
+                  <Image url="@/Images/imagen_2024-10-18_185449157-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="CreateTaskButton" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="52.0" layoutX="251.0" layoutY="126.0" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <Text fx:id="CreateTaskText" layoutX="304.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create task" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="Close" layoutX="594.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="-fx-cursor: hand;" text="X" wrappingWidth="32.0">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="ViewTaskButton" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="52.0" layoutX="251.0" layoutY="214.0" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <Text fx:id="ViewTaskText" layoutX="305.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View tasks" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Text>
+            <Button fx:id="HelpandFeedback" layoutX="29.0" layoutY="343.0" mnemonicParsing="false" text="Help and feedback" />
       </children>
     </AnchorPane>
   </children>
