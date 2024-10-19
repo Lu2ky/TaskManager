@@ -4,6 +4,7 @@
 
 ### Update Log
 - login and account creation
+- Home Page
 - Storing data in "D:\TaskManagerData"
   
 ## Collaborators
