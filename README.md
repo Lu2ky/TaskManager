@@ -1,6 +1,6 @@
 # TaskManager
 
-## Alpha Version (1.0)
+## Alpha Version (1.1)
 
 ### Update Log
 - login and account creation
